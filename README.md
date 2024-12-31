@@ -17,12 +17,13 @@
 
 ---
 
-## 📌 Set up project
+## 📌 usage
 - clone the repo
 ```bash
-git clone "https://github.com/amitanshusahu/InstamiliGram" && cd InstamiliGram
+git clone "https://github.com/amitanshusahu/dotfiles"
 ```
 - use stow
 ```bash
-stow . # if conflicts 'stow --adopt . '
+# if conflicts 'stow --adopt . '
+stow . 
 ```
