@@ -4,9 +4,24 @@ general {
         color_bad = "#ff00f2"
 }
 
+order += "cpu_temperature 0"
+order += "battery 0"
 order += "memory"
 order += "volume master"
 order += "tztime local"
+
+battery 0 {
+        format = " %status %remaining "
+        integer_battery_capacity = true
+        status_chr = "⚡"
+        status_bat = "🔋"
+        status_full = "✅"
+        status_unk = "?"
+}
+
+cpu_temperature 0 {
+        format = " 💻: %degrees °C "
+}
 
 tztime local {
         format = " %d ⏱️ %H:%M "
