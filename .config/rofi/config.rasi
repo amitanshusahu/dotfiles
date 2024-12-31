@@ -142,4 +142,4 @@ element-text, element-icon {
 //@theme "/home/amitanshu/.local/share/rofi/themes/spotlight-dark.rasi"
 //@theme "/home/amitanshu/.local/share/rofi/themes/windows11-grid-dark.rasi"
 //@theme "/home/amitanshu/.local/share/rofi/themes/rounded-purple-dark.rasi"
-@theme "/home/amitanshu/.local/share/rofi/themes/dracula1.rasi"
+@theme "./dracula1.rasi"
