@@ -1,0 +1,25 @@
+general {
+        colors = true
+        interval = 10
+        color_bad = "#ff00f2"
+}
+
+order += "memory"
+order += "volume master"
+order += "tztime local"
+
+tztime local {
+        format = " %d ⏱️ %H:%M "
+        separator = false
+        separator_block_width = 1
+}
+
+volume master {
+        format = " ♪: %volume "
+        format_muted = "♪: muted (%volume)"
+        device = "default"
+}
+
+memory {
+    format = " %used "
+}
