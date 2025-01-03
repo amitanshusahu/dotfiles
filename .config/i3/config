@@ -234,7 +234,7 @@ for_window [class="^.*"] border pixel 1
 smart_borders on
 
 # setting up wallpaper
-# exec feh --bg-fill $HOME/Pictures/sun_9-wallpaper-2400x1350.jpg
+exec feh --bg-fill $HOME/Pictures/purple-penguin-linux.jpg
 
 #setting up compositor
 # exec picom --experimental-backend 
@@ -245,3 +245,6 @@ bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons
 # setting all window to float
 #for_window [class="^.*"] floating enable
 #for_window [class="firefox"] floating enable
+
+# decreasing my laptop resolution to 1440X900
+exec --no-startup-id xrandr --output eDP --mode 1440x900
