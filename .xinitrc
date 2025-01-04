@@ -20,8 +20,5 @@
 # Start a compositor (optional)
 # picom --experimental-backends &
 
-# xprofile to imporve trackpad experince of thinkpad
-[ -f ~/.xprofile ] && source ~/.xprofile
-
 # Start i3
 exec i3

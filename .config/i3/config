@@ -250,3 +250,6 @@ bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons
 
 # decreasing my laptop resolution to 1440X900
 exec --no-startup-id xrandr --output eDP --mode 1440x900
+
+# start xprofile 
+exec --no-startup-id ~/.xprofile
