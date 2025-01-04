@@ -1,0 +1,10 @@
+[Unit]
+Description=Caps2Esc Service
+After=graphical.target
+
+[Service]
+ExecStart=/usr/bin/udevmon -c %h/.config/interception/udevmon.yaml
+Restart=always
+
+[Install]
+WantedBy=default.target
