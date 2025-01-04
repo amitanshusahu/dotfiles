@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+
+udevmon -c ~/.config/interception/udevmon.yaml &
