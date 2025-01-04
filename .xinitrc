@@ -5,7 +5,7 @@
 # global xinitrc file, used by all X sessions started by xinit (startx)
 
 # invoke global X session script
-. /etc/X11/Xsession
+#. /etc/X11/Xsession
 
 
 # Set the background color
@@ -20,5 +20,8 @@
 # Start a compositor (optional)
 # picom --experimental-backends &
 
+# xprofile to imporve trackpad experince of thinkpad
+[ -f ~/.xprofile ] && source ~/.xprofile
+
 # Start i3
-#exec i3
+exec i3

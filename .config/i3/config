@@ -236,7 +236,7 @@ for_window [class="^.*"] border pixel 1
 smart_borders on
 
 # setting up wallpaper
-exec feh --bg-fill $HOME/Pictures/purple-penguin-linux.jpg
+exec feh --bg-fill $HOME/Pictures/wallpapers/purple-penguin-linux.jpg
 
 #setting up compositor
 # exec picom --experimental-backend 
