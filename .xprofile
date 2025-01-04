@@ -1,6 +1,6 @@
-<<<<<<< HEAD
 # .xprofile needs to be executable.
 
+### >> Improving Touchpad Experience
 # Enable natural scrolling
 xinput set-prop 11 "libinput Natural Scrolling Enabled" 1
 
@@ -9,6 +9,9 @@ xinput set-prop 11 "libinput Tapping Enabled" 1
 
 # Set scrolling pixel distance
 xinput set-prop 11 "libinput Scrolling Pixel Distance" 35
+
+# Start libinput-gestures for gestures
+libinput-gestures &
 
 # Starting up cpas2esc service
 udevmon -c ~/.config/interception/udevmon.yaml &
