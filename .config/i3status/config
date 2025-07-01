@@ -10,19 +10,6 @@ order += "memory"
 order += "volume master"
 order += "tztime local"
 
-battery 0 {
-        format = " %status %percentage %remaining "
-        integer_battery_capacity = true
-        status_chr = "⚡"
-        status_bat = "🔋"
-        status_full = "✅"
-        status_unk = "?"
-}
-
-cpu_temperature 0 {
-        format = " 💻: %degrees °C "
-}
-
 tztime local {
         format = " %d ⏱️ %H:%M "
         separator = false

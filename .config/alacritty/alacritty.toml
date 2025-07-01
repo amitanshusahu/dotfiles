@@ -1,4 +1,4 @@
-import = [ "~/.config/alacritty/dracula.toml" ]
+general.import = [ "~/.config/alacritty/dracula.toml" ]
 
 [window]
 dynamic_padding = false

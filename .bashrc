@@ -121,7 +121,11 @@ export PATH=$PATH:~/Applications/zig/zig
 # ~/.bashrc
 
 eval "$(starship init bash)"
+export PATH="$PATH:/opt/nvim-linux64/bin"
+eval "$(zoxide init bash)"
 
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
