@@ -45,6 +45,12 @@ esac
 # should be on the output of commands, not on the prompt
 #force_color_prompt=yes
 
+parent_dir() {
+  local p="${PWD%/*}"
+  echo "${p##*/}"
+}
+
+
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
 	# We have color support; assume it's compliant with Ecma-48
@@ -57,7 +63,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+	PS1='\n\[\033[38;5;39m\]╭─[\[\033[38;5;81m\]\h\[\033[38;5;39m\]]─[\[\033[38;5;214m\]\W\[\033[38;5;39m\]]\n\[\033[38;5;39m\]╰─▶ \[\033[0m\]'
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -120,8 +126,16 @@ export PATH=$PATH:~/Applications/zig/zig
 
 # ~/.bashrc
 
-eval "$(starship init bash)"
+#eval "$(starship init bash)"
+eval "$(zoxide init bash)"
 
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$HOME/.local/bin:$PATH
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
