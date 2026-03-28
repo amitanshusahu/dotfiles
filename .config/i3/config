@@ -253,3 +253,7 @@ exec --no-startup-id xrandr --output eDP --mode 1440x900
 
 # start xprofile 
 exec --no-startup-id ~/.xprofile
+
+# Combine window_role and class inside the same brackets
+for_window [window_role="pop-up" class="Google-chrome"] floating enable, move position 1000 100
+
